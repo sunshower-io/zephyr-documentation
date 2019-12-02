@@ -23,6 +23,7 @@ jobs:
           git config --local user.email "build@sunshower.io"
           git config --local user.name "josiahhaswell"
           git commit -am "Releasing..."
+      - name: Push Changes
         uses: ad-m/github-push-action@master
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
