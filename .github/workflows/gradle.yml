@@ -18,6 +18,9 @@ jobs:
         run: yarn add global vuepress
       - name:
         run: npm run docs:build
+
+      - name: configure remote
+        run: git checkout ${GITHUB_REF##*/}
       - name: configure git credentials
         run: git config --global credential.helper cache
       - name: configure git username
