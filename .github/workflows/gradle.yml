@@ -17,7 +17,7 @@ jobs:
       - name: install vuepress
         run: yarn add global vuepress
       - name:
-        run: npm run docs:build
+        run: npm run src:build
 
       - name: configure remote
         run: git checkout ${GITHUB_REF##*/}
@@ -33,4 +33,3 @@ jobs:
         run: git commit -am "Releasing"
       - name: push
         run: git push origin ${GITHUB_REF##*/} -u
-
