@@ -7,5 +7,8 @@
     "src:dev": "vuepress dev src",
     "src:build": "vuepress build src"
   },
-  "dependencies": {}
+  "dependencies": {
+    "global": "^4.4.0",
+    "vuepress": "^1.2.0"
+  }
 }
