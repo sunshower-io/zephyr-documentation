@@ -22,6 +22,7 @@ jobs:
         run: |
           git config --local user.email "build@sunshower.io"
           git config --local user.name "josiahhaswell"
+          cp CNAME docs/
           git add docs
           git commit -am "Releasing..."
       - name: Push Changes
