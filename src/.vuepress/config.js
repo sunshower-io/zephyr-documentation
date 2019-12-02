@@ -40,7 +40,6 @@ function sort(files) {
 const omit = [
     'README.md',
     '.vuepress',
-
 ];
 
 function tree(root) {
