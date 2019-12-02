@@ -1,5 +1,7 @@
 {
-  "devDependencies": {},
+  "devDependencies": {
+    "front-matter": "^3.0.2"
+  },
   "scripts": {
     "src:dev": "vuepress dev src",
     "src:build": "vuepress build src"
