@@ -1,5 +1,6 @@
 module.exports = {
     title: 'Zephyr',
+    dest: 'docs/docs',
     base: '/zephyr-documentation/',
     description: 'A Java Plugin System for the 21st Century',
     themeConfig: {
