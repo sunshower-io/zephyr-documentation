@@ -6,5 +6,7 @@ module.exports = {
     themeConfig: {
         logo: '/wind-duotone.svg',
         sidebar: 'auto'
-    }
-}
+    },
+    repo: 'sunshower-io/zephyr',
+    repoLabel: 'Get Zephyr',
+};
