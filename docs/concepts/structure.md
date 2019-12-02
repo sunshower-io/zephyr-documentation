@@ -2,10 +2,10 @@
 
 The Kernel filesystem is structured as follows:
 
-$SUNSHOWER_HOME = /
+`$SUNSHOWER_HOME = /`
 
 When a kernel module is installed, a new "directory" is created at:
-droplet://<droplet-group>/<droplet-name>/<droplet-version> 
+`droplet://<droplet-group>/<droplet-name>/<droplet-version>`
 where `<droplet-group>`, `<droplet-name>` and `<droplet-version>` correspond to the following `META-INF/MANIFEST.MF` 
 entries of the installed assembly
 
