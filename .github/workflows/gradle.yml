@@ -12,5 +12,9 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: '10.x'
+      - name: install yarn
+        run: npm install yarn -g
+      - name: install vuepress
+        run: yarn add global vuepress
       - name:
         run: npm run docs:build
