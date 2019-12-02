@@ -1,6 +1,6 @@
 module.exports = {
-    base: 'zephyr-documentation',
     title: 'Zephyr',
+    base: '/zephyr-documentation/',
     description: 'A Java Plugin System for the 21st Century',
     themeConfig: {
         logo: '/wind-duotone.svg',
