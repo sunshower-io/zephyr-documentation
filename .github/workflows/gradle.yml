@@ -29,5 +29,5 @@ jobs:
       - name: commit
         run: git commit -am "Releasing"
       - name: push
-        run: git push origin master -u
+        run: git push origin ${GITHUB_REF##*/} -u
 
