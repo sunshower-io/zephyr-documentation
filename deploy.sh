@@ -10,7 +10,7 @@ npm run docs:build
 cd docs/.vuepress/dist
 
 # if you are deploying to a custom domain
- echo 'docs.zephyr.sunshower.io' > CNAME
+echo 'zephyr-docs.sunshower.io' > CNAME
 
 git init
 git add -A
