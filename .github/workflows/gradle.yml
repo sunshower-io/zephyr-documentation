@@ -1,0 +1,36 @@
+name: Java CI
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v1
+      - name: Set up Node 10
+        uses: actions/setup-node@v1
+        with:
+          node-version: '10.x'
+      - name: install yarn
+        run: npm install yarn -g
+      - name: install vuepress
+        run: yarn add global vuepress
+      - name:
+        run: npm run docs:build
+
+      - name: configure remote
+        run: git checkout ${GITHUB_REF##*/}
+      - name: configure git credentials
+        run: git config --global credential.helper cache
+      - name: configure git username
+        run: git config user.name josiahhaswell
+      - name: configure git token
+        run: git config user.password ${{ secrets.GITHUB_TOKEN }}
+
+
+      - name: commit
+        run: git commit -am "Releasing"
+      - name: push
+        run: git push origin ${GITHUB_REF##*/} -u
+
