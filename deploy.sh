@@ -4,10 +4,10 @@
 set -e
 
 # build
-npm run docs:build
+npm run src:build
 
 # navigate into the build output directory
-cd docs/.vuepress/dist
+cd docs
 
 # if you are deploying to a custom domain
 echo 'zephyr-docs.sunshower.io' > CNAME
