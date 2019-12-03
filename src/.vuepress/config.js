@@ -70,7 +70,10 @@ module.exports = {
         logo: '/wind-duotone.svg',
         sidebar: tree('src'),
         repo: 'sunshower-io/zephyr',
-        repoLabel: 'Get Zephyr',
+        repoLabel: 'Repository',
+        nav: [
+            {text: 'Site', link: 'https://zephyr.sunshower.io'}
+        ]
     },
     dest: 'docs'
 };
