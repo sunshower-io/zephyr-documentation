@@ -118,6 +118,15 @@ Gutten Tag, <name>!
 when called by any consuming services with the parameter `<name>`.
 
 ### Dynamic Dependencies
+Obviously, forcing `greeters-translate` to maintain a static list of `Greeter` extension-point implementations defeats
+the purpose of a dynamic plugin system.  It's more common to omit the dependency from `greeters-translate` to `greeter-german`
+and instead add a dependency from `greeter-german` (or any other implementation of `Greeter`) to `greeters-translate` and have
+`greeters-translate` perform an action once a new greeter implementation has been registered.  Zephyr provides two general
+patterns for this:
+
+#### The Whiteboard Pattern
+
+#### The Observer Pattern 
 
 ### Dependency Types
 
