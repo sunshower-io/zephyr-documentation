@@ -23,7 +23,7 @@ http://artifacts.sunshower.io/repository/sunshower-releases/io/zephyr/kernel-cor
 The Zephyr application has several modes:
 1. `Embedded`: Embed Zephyr as the plugin manager inside your application. 
 1. `Offline`: In this mode, any Zephyr command can be run, but no persistent Zephyr process is created. This is the default.
-1. `Server`: In this mode, the Zephyr server is started.  Commands may be run by connecting via `Interactive`. To start in server mode, run with the flag `-sh`
+1. `Server`: In this mode, the Zephyr server is started.  Commands may be run by connecting via `Interactive`. To start in server mode, run with the flag `-s -h`
 1. `Interactive`: In this mode, users may interact with an existing `Server` process or Zephyr directly. A server must already be running. To start in interactive mode, run with the flag `-i`. 
 
 The typical interaction mode is via `Server` followed by `Interactive`. 
@@ -42,3 +42,11 @@ This should result in something like:
 ![Command Output](./img/zephyr-server-start.png)
 
 With your server started, you can now interact with Zephyr via the [Shell](/shell/commands)
+
+### CLI Arguments
+
+#### Home Directory
+To set the home directory, provide `-h` or `--home-directory` and a path. As of master@664e0dc there is currently not a default, but will be for vNext.
+
+#### Logging Level
+The log level specificity is Level.WARNING by default. `-l` or `--log-level` and a level will override this. For example, `-l info` will lower it.
