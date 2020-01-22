@@ -1,24 +1,29 @@
 # Installing Plugins and Modules
 
-## Installing a Module
 Zephyr has two types of plugins: `kernel modules` and `plugins`.  Plugins may generally be added, removed, started, stopped, etc. without
 requiring a restart of the kernel (it's generally a bug if they can't).  However, kernel modules directly modify the kernel's behavior, and so the
-Zephyr kernel must be restarted after a kernel module has been installed.
+Zephyr kernel must be restarted after a kernel module has been installed. You can work with kernel modules and plugins in the [shell](/shell/commands).
+
+## Installing a Module
 
 With the Zephyr kernel running, you may install a new kernel module (or set of them) via
 ```
-plugin install `<url to kernel module>`
+plugin install `<KERNEL_MODULE_PATH>`
 kernel restart
 ```
 
 ## Installing a Plugin
 
-Plugins have no restrictions as to when they can be installed and uninstalled.  Simply run `plugin install <plugin url>`  and you should see
+Plugins have no restrictions as to when they can be installed and uninstalled.  Simply run `plugin install <PLUGIN_PATH>`  and you should see
 
 ![Installing plugin](./img/plugin-installing.png)
 
 In this example, we installed a plugin with the coordinate `io.zephyr.spring:spring-web-plugin:1.0.0`.  It is now available in the plugin registry,
 viewable via `plugin list`.
+
+### Note
+
+Plugin installation works by supplying the path to the plugin. Once it is installed, you refer to it by its coordinate.
 
 
 ## Viewing the Plugin Registry
