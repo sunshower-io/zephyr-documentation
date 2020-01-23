@@ -1,3 +1,7 @@
+---
+order: 4
+---
+
 # The Dependency Graph
 
 ## Declaring a Dependency

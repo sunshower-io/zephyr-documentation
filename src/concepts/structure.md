@@ -1,3 +1,7 @@
+---
+order: 2
+---
+
 # Structure
 
 The Kernel filesystem is structured as follows:

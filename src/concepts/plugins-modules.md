@@ -1,3 +1,7 @@
+---
+order: 0
+---
+
 # Plugins and Modules
 
 Plugins and modules extend the base functionality of Zephyr, and are how you build up your application.

@@ -1,3 +1,7 @@
+---
+order: 3
+---
+
 # Plugin Classpath
 
 Zephyr's classloading is designed to maximize sharing between similar plugins
