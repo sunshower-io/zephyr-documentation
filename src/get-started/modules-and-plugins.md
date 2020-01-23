@@ -1,3 +1,7 @@
+---
+order: 1
+---
+
 # Installing Plugins and Modules
 
 Zephyr has two types of plugins: `kernel modules` and `plugins`.  Plugins may generally be added, removed, started, stopped, etc. without

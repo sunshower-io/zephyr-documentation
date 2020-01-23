@@ -1,9 +1,13 @@
+---
+order: 2
+---
+
 # Write Your First Kernel Module
 
 Kernel modules alter the basic behavior of Zephyr. This example is based on `zephyr-logging`, which modifies the default Java logging behavior.
 
 ## A basic build.gradle
-You'll want to depend on `kernel-core` and `kernel-api`, as well as `kernel-tests`.
+You'll want to depend on `kernel-core` and `kernel-api`, as well as `kernel-tests`. 
 ```groovy
 apply plugin: 'java'
 apply plugin: 'java-library'
@@ -49,7 +53,7 @@ public class LogEntryPoint implements EntryPoint {
 }
 ```
 
-### Accepting CLI Arguments
+### Accepting CLI arguments
 You can accept options from the CLI within `initialize()`. First, you need to implement `io.zephyr.kernel.Options`.
 ```java
 public class LogOptions extends AbstractValidatable<LogOptions> implements Options<LogOptions> {
@@ -113,7 +117,7 @@ Finally, as the first step in `initialize()`, you can create and set your new op
 ```
 
 
-### Initializing a Kernel Module
+### Initializing a kernel module
 The `initialize()` method gets called by the KernelLauncher, and does the heavy lifting for setting up your kernel module.
 ```java
 import io.zephyr.common.Options;
@@ -194,7 +198,7 @@ public class LogEntryPoint implements EntryPoint {
 }
 ```
 
-## Handling Localization
+## Handling localization
 Logging should be localized.
 To do this, pass a name-spaced string to your logging method, and set up a corresponding string in the i18n properties file for the class.
 The file should be in `src/main/resources/i18n/`, and then nested in directories to reflect the package name.

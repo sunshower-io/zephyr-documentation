@@ -1,3 +1,7 @@
+---
+order: 0
+---
+
 # Installing Zephyr
 
 ## Building from source 

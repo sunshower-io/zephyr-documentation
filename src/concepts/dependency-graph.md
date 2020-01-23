@@ -1,5 +1,7 @@
 # The Dependency Graph
 
+## Declaring a Dependency
+
 Say you have a simple greeter program that exports an interface:
 
 *Greeter.java*
@@ -20,7 +22,7 @@ plugin:
     description: Friendly ways to say hello!
 ```
 
-This interface is known as an `extension point`--i.e. it's a service contract
+This interface is known as an `extension point` -- i.e. it's a service contract
 that is exported by your plugin that may be `satisfied` by other plugins.  
 
 Say you publish your plugin to a central repository, and now a German colleague wants to implement a plugin that satisifies your extension point:

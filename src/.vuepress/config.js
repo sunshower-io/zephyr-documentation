@@ -47,7 +47,7 @@ function tree(root) {
         subgroups = subdirs.filter(f => omit.indexOf(f) === -1).map(subdir => {
             let children = sort(glob.sync(`${root}/${subdir}/**/*.md`));
             return {
-                title: capitalize(subdir),
+                title: capitalize(subdir.replace(/-/g, ' ')),
                 collapsable: !!children.length,
                 children: children
             }
@@ -70,7 +70,10 @@ module.exports = {
         logo: '/wind-duotone.svg',
         sidebar: tree('src'),
         repo: 'sunshower-io/zephyr',
-        repoLabel: 'Get Zephyr',
+        repoLabel: 'Repository',
+        nav: [
+            {text: 'Site', link: 'https://zephyr.sunshower.io'}
+        ]
     },
     dest: 'docs'
 };
