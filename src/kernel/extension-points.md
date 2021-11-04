@@ -93,7 +93,8 @@ public interface ModuleAssemblyExtractor {
 ```
 
 ### Kernel Module Concurrency
-Kernel modules are safely and concurrently executed on the Gyre, and do not require any internal thread-safety mechanisms.
+Kernel modules are safely and concurrently executed on the Gyre, and do not require any internal thread-safety mechanisms. Zephyr APIs
+are thread-safe.
 
 
 
