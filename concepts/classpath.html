@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Module Classpath | Zephyr</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    
+    <meta name="description" content="A Java Plugin System for the 21st Century">
+    
+    <link rel="preload" href="/assets/css/0.styles.d14442de.css" as="style"><link rel="preload" href="/assets/js/app.62d32486.js" as="script"><link rel="preload" href="/assets/js/2.cbfca56f.js" as="script"><link rel="preload" href="/assets/js/8.fe29abee.js" as="script"><link rel="prefetch" href="/assets/js/10.c60c006a.js"><link rel="prefetch" href="/assets/js/11.7f6b3ff0.js"><link rel="prefetch" href="/assets/js/12.9b6ade78.js"><link rel="prefetch" href="/assets/js/13.1adfbbda.js"><link rel="prefetch" href="/assets/js/14.8eff6c09.js"><link rel="prefetch" href="/assets/js/15.f20e6d04.js"><link rel="prefetch" href="/assets/js/16.2116379b.js"><link rel="prefetch" href="/assets/js/17.730ad429.js"><link rel="prefetch" href="/assets/js/18.7e1bbf3c.js"><link rel="prefetch" href="/assets/js/19.1303976d.js"><link rel="prefetch" href="/assets/js/20.21987232.js"><link rel="prefetch" href="/assets/js/3.ae5d9a09.js"><link rel="prefetch" href="/assets/js/4.e4db42ae.js"><link rel="prefetch" href="/assets/js/5.3dfb74cc.js"><link rel="prefetch" href="/assets/js/6.b78fe8da.js"><link rel="prefetch" href="/assets/js/7.2b92f8ee.js"><link rel="prefetch" href="/assets/js/9.1a06ba1d.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.d14442de.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/wind-duotone.svg" alt="Zephyr" class="logo"> <span class="site-name can-hide">Zephyr</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"> <a href="https://github.com/sunshower-io/zephyr" target="_blank" rel="noopener noreferrer" class="repo-link">
+    Get Zephyr
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"> <a href="https://github.com/sunshower-io/zephyr" target="_blank" rel="noopener noreferrer" class="repo-link">
+    Get Zephyr
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav>  <ul class="sidebar-links"><li><a href="/" aria-current="page" class="sidebar-link">Overview</a></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>Concepts</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/concepts/classpath.html" aria-current="page" class="active sidebar-link">Module Classpath</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/concepts/classpath.html#package-filters" class="sidebar-link">Package Filters</a></li><li class="sidebar-sub-header"><a href="/concepts/classpath.html#classloader-graph" class="sidebar-link">Classloader Graph</a></li></ul></li><li><a href="/concepts/dependency-graph.html" class="sidebar-link">The Dependency Graph</a></li><li><a href="/concepts/lifecycle.html" class="sidebar-link">Lifecycle</a></li><li><a href="/concepts/plugins-modules.html" class="sidebar-link">Modules</a></li><li><a href="/concepts/structure.html" class="sidebar-link">Structure</a></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Get-started</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Kernel</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>Lifecycle</span> <!----></p> <!----></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>Plugins</span> <!----></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Shell</span> <span class="arrow right"></span></p> <!----></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="module-classpath"><a href="#module-classpath" class="header-anchor">#</a> Module Classpath</h1> <p>Zephyr's classloading is designed to maximize sharing between similar modules
+while enforcing isolation between dissimilar modules.  Zephyr supports restricting resource imports
+and exports at the package or class level via package filters, and dependency-graph filters at the module level.</p> <h2 id="package-filters"><a href="#package-filters" class="header-anchor">#</a> Package Filters</h2> <p>Modules may exclude or include packages, resources, and services at the module level or at the dependency level.</p> <h3 id="module-descriptor-formats"><a href="#module-descriptor-formats" class="header-anchor">#</a> Module Descriptor Formats</h3> <p>Zephyr supports <code>YAML</code>, <code>JSON</code>, and <code>MANIFEST.MF</code> module descriptor formats by default. Implementing a new <code>ModuleScanner</code>
+allows you to extend or modify the formats understood by Zephyr.</p> <h4 id="manifest-mf"><a href="#manifest-mf" class="header-anchor">#</a> MANIFEST.MF</h4> <p>MANIFEST files are typically the easiest to generate with existing build-tools.  Understood fields are:</p> <div class="language-manifest extra-class"><pre class="language-text"><code>name: &lt;module name&gt; (string, required)
+group: &lt;module group&gt; (string, required)
+version: &lt;module version&gt; (semantic version)
+order: &lt;startup order&gt; (int, optional)
+type: &lt;plugin|kernel-module&gt; (enum, optional, defaults to &quot;plugin&quot;)
+dependencies: {dependency-descriptor}
+
+</code></pre></div><p>The format for <code>dependency-descriptors</code> is as follows:</p> <p><code>&lt;imports=[import-list]; exports=[export-list]&gt;</code>
+Where the <code>import-list</code> and <code>export-list</code> are comma-separated path definitions of
+type <code>resource</code> or <code>package</code>. For instance, if you would like to only expose <code>io.sunshower.my.plugin.package</code>
+you would specify <code>&lt;imports:[io.sunshower.my.plugin.package.*]&gt;</code>.</p> <div class="language-text extra-class"><pre class="language-text"><code>[type]@[group]:[name]:[version]
+</code></pre></div><p>for instance, if you've defined a plugin with
+<code>[group]</code> <code>io.sunshower.zephyr.plugins</code>, <code>[name]</code> <code>translator-plugin</code>, <code>version</code> <code>1.0.0.Final</code>,
+and this plugin contains services (not just a useful classpath), then that can be identified within Zephyr
+at <code>service@io.sunshower.zephyr.plungins:translator-plugin:1.0.0.Final</code></p> <p>Dependencies are separated by commas with optional leading and trailing whitespace</p> <h4 id="dependency-descriptors"><a href="#dependency-descriptors" class="header-anchor">#</a> Dependency Descriptors</h4> <p>Following a dependency-declaration, you can specify a dependency-descriptor which contains the following elements:</p> <ol><li><code>export</code>: if this set to <code>true</code>, then dependencies of your plugin will see this dependency.  i.e.
+this plugin will be <em>re-exported</em></li> <li><code>services</code>: (none|import|export), default: <code>none</code>.  If set to <code>export</code>, then this module's services will
+be re-exported as described above</li> <li>optional: if set to <code>true</code>, then dependency-resolution will not be enforced.  If it is present, then
+the lifecycle of this module will be executed according to its location within the dependency graph</li></ol> <h3 id="module-resource-filters"><a href="#module-resource-filters" class="header-anchor">#</a> Module Resource Filters</h3> <p>A module can describe which packages and resources it wishes to provide to, or restrict from its dependencies.
+For instance, in our Greeter module configuration, suppose <code>com.greeters:greeter</code> contained the following resources:</p> <p><em>com.greeters:greeter/packages</em></p> <div class="language- extra-class"><pre class="language-text"><code>com.greeters.internal
+com.greeters.lib
+</code></pre></div><p>The greeters module could restrict the <code>com.greeters.internal</code> package from its dependents as follows:</p> <p><em>com.greeters:greeter/module.yaml</em></p> <div class="language-yaml extra-class"><pre class="language-yaml"><code><span class="token key atrule">module</span><span class="token punctuation">:</span>
+    <span class="token key atrule">name</span><span class="token punctuation">:</span> greeter
+    <span class="token key atrule">group</span><span class="token punctuation">:</span> com.greeters
+    <span class="token key atrule">version</span><span class="token punctuation">:</span> 1.0.0<span class="token punctuation">-</span>SNAPSHOT
+    <span class="token key atrule">type</span><span class="token punctuation">:</span> module
+    <span class="token key atrule">description</span><span class="token punctuation">:</span> Friendly ways to say hello<span class="token tag">!</span>
+    <span class="token key atrule">exports</span><span class="token punctuation">:</span>
+      <span class="token key atrule">exclude</span><span class="token punctuation">:</span>
+        <span class="token punctuation">-</span> com/greeters/internal
+      <span class="token key atrule">include</span><span class="token punctuation">:</span>
+        <span class="token punctuation">-</span> com/greeters/lib
+</code></pre></div><p>Such filters can contain wildcards and globs.</p> <p>Similarly, if a module wishes to include or exclude classpath resources from a dependency, it may use the
+identical format in its dependency import declaration, e.g.</p> <p><em>com.greeters:greeter-german/module.yaml</em></p> <div class="language-yaml extra-class"><pre class="language-yaml"><code><span class="token key atrule">module</span><span class="token punctuation">:</span>
+    <span class="token key atrule">name</span><span class="token punctuation">:</span> greeter<span class="token punctuation">-</span>german
+    <span class="token key atrule">group</span><span class="token punctuation">:</span> com.greeters
+    <span class="token key atrule">version</span><span class="token punctuation">:</span> 1.0.0<span class="token punctuation">-</span>SNAPSHOT
+    <span class="token key atrule">type</span><span class="token punctuation">:</span> module
+    <span class="token key atrule">description</span><span class="token punctuation">:</span> Freundliche Art Hallo zu sagen<span class="token tag">!</span>
+    <span class="token key atrule">dependencies</span><span class="token punctuation">:</span>
+      <span class="token punctuation">-</span> <span class="token key atrule">dependency</span><span class="token punctuation">:</span>
+          <span class="token key atrule">required</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+          <span class="token key atrule">type</span><span class="token punctuation">:</span> classpath 
+          <span class="token key atrule">group</span><span class="token punctuation">:</span> com.greeters
+          <span class="token key atrule">name</span><span class="token punctuation">:</span> greeter
+          <span class="token key atrule">version</span><span class="token punctuation">:</span> 1.0.0
+          <span class="token key atrule">imports</span><span class="token punctuation">:</span>
+            <span class="token key atrule">exclude</span><span class="token punctuation">:</span>
+              <span class="token punctuation">-</span> com/greeters/internal
+            <span class="token key atrule">include</span><span class="token punctuation">:</span>
+              <span class="token punctuation">-</span> com/greeters/lib
+
+</code></pre></div><h2 id="classloader-graph"><a href="#classloader-graph" class="header-anchor">#</a> Classloader Graph</h2> <p>A module's classloader graph mirrors its dependency graph subject to import/export restrictions as described above.<br>
+This may be counterintuitive to many users coming from other modular environments where classpath sharing is severely restricted,
+if it's supported at all.</p> <p><img src="/assets/img/classloader-graph.7100bc49.png" alt="Greeter Classpath Graph"></p> <p>This is a conscious decision on our part:  we believe that dependencies are best managed relative to the system they belong to as a whole,
+rather than on a per-module basis.  Maximizing sharing can dramatically reduce memory consumption and startup times relative to alternative solutions.<br>
+We've found that the module classloader graph selects the correct classes where conflicts exists in most cases.  Where it doesn't, altering the module graph by
+adding or removing dependencies has resolved the issue.  If there are still problems, they can easily be resolved via import and export restrictions
+as described above.</p> <h3 id="java-serviceloader-api"><a href="#java-serviceloader-api" class="header-anchor">#</a> Java ServiceLoader API</h3> <p>Zephyr supports and leverages the Java ServiceLoader API for modules.  By default, modules do not inherit their dependencies'
+services.  This behavior can be overridden via the <code>services</code> element, which accepts <code>include</code> and <code>exclude</code> as arguments.</p> <p><em>com.greeters:greeter-german/module.yaml</em></p> <div class="language-yaml extra-class"><pre class="language-yaml"><code><span class="token key atrule">module</span><span class="token punctuation">:</span>
+    <span class="token key atrule">name</span><span class="token punctuation">:</span> greeter<span class="token punctuation">-</span>german
+    <span class="token key atrule">group</span><span class="token punctuation">:</span> com.greeters
+    <span class="token key atrule">version</span><span class="token punctuation">:</span> 1.0.0<span class="token punctuation">-</span>SNAPSHOT
+    <span class="token key atrule">type</span><span class="token punctuation">:</span> module
+    <span class="token key atrule">description</span><span class="token punctuation">:</span> Freundliche Art Hallo zu sagen<span class="token tag">!</span>
+    <span class="token key atrule">dependencies</span><span class="token punctuation">:</span>
+      <span class="token punctuation">-</span> <span class="token key atrule">dependency</span><span class="token punctuation">:</span>
+          <span class="token key atrule">required</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+          <span class="token key atrule">type</span><span class="token punctuation">:</span> classpath 
+          <span class="token key atrule">group</span><span class="token punctuation">:</span> com.greeters
+          <span class="token key atrule">name</span><span class="token punctuation">:</span> greeter
+          <span class="token key atrule">version</span><span class="token punctuation">:</span> 1.0.0
+          <span class="token key atrule">services</span><span class="token punctuation">:</span> exclude
+          <span class="token key atrule">imports</span><span class="token punctuation">:</span>
+            <span class="token key atrule">exclude</span><span class="token punctuation">:</span>
+              <span class="token punctuation">-</span> com/greeters/internal
+            <span class="token key atrule">include</span><span class="token punctuation">:</span>
+              <span class="token punctuation">-</span> com/greeters/lib
+
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/" class="prev router-link-active">
+        Overview
+      </a></span> <span class="next"><a href="/concepts/dependency-graph.html">
+        The Dependency Graph
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.62d32486.js" defer></script><script src="/assets/js/2.cbfca56f.js" defer></script><script src="/assets/js/8.fe29abee.js" defer></script>
+  </body>
+</html>
