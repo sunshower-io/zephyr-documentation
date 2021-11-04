@@ -4,8 +4,9 @@
     "glob": "^7.1.6"
   },
   "scripts": {
-    "src:dev": "vuepress dev src",
-    "src:build": "vuepress build src"
+    "src:dev": "npx vuepress dev src",
+    "src:build": "npx vuepress build src",
+    "src:start": "npx vuepress dev src && npx vuepress build src"
   },
   "dependencies": {
     "global": "^4.4.0",

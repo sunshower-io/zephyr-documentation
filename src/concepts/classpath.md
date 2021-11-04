@@ -30,6 +30,13 @@ dependencies: {dependency-descriptor}
 
 The format for `dependency-descriptors` is as follows:
 
+`<imports=[import-list]; exports=[export-list]>`
+Where the `import-list` and `export-list` are comma-separated path definitions of 
+type `resource` or `package`. For instance, if you would like to only expose `io.sunshower.my.plugin.package`
+you would specify `<imports:[io.sunshower.my.plugin.package.*]>`. 
+
+
+
 ```text
 [type]@[group]:[name]:[version]
 ```
@@ -37,6 +44,20 @@ for instance, if you've defined a plugin with
 `[group]` `io.sunshower.zephyr.plugins`, `[name]` `translator-plugin`, `version` `1.0.0.Final`, 
 and this plugin contains services (not just a useful classpath), then that can be identified within Zephyr
 at `service@io.sunshower.zephyr.plungins:translator-plugin:1.0.0.Final`
+
+Dependencies are separated by commas with optional leading and trailing whitespace
+
+
+#### Dependency Descriptors
+Following a dependency-declaration, you can specify a dependency-descriptor which contains the following elements:
+
+1. `export`: if this set to `true`, then dependencies of your plugin will see this dependency.  i.e. 
+    this plugin will be _re-exported_
+2. `services`: (none|import|export), default: `none`.  If set to `export`, then this module's services will
+    be re-exported as described above
+3. optional: if set to `true`, then dependency-resolution will not be enforced.  If it is present, then
+   the lifecycle of this module will be executed according to its location within the dependency graph
+
 
 
 
