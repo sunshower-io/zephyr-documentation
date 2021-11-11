@@ -47,7 +47,7 @@ function tree(root) {
         subgroups = subdirs.filter(f => omit.indexOf(f) === -1).map(subdir => {
             let children = sort(glob.sync(`${root}/${subdir}/**/*.md`));
             return {
-                title: capitalize(subdir),
+                title: capitalize(subdir).replace('-', ' '),
                 collapsable: !!children.length,
                 children: children
             }
