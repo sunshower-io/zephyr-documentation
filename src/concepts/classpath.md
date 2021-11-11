@@ -75,6 +75,7 @@ com.greeters.lib
 The greeters module could restrict the `com.greeters.internal` package from its dependents as follows:
 
 
+
 *com.greeters:greeter/module.yaml*
 ```yaml
 module:
